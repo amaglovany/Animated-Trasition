@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_radius_4">4dp</dimen>
+    <dimen name="corner_radius_10">10dp</dimen>
+
+    <dimen name="image_size_small">48dp</dimen>
+
+    <dimen name="key_line_1">8dp</dimen>
+    <dimen name="key_line_2">16dp</dimen>
+</resources>

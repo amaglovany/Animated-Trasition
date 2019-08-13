@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rect_10">
+
+    <ImageView
+        android:id="@+id/cover_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="0.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_star_trek_logo" />
+
+    <View
+        android:id="@+id/info_background_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@id/cover_image_view"
+        app:layout_constraintEnd_toEndOf="@id/cover_image_view"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/cover_image_view" />
+
+    <ImageView
+        android:id="@+id/icon_image_view"
+        android:layout_width="@dimen/image_size_small"
+        android:layout_height="@dimen/image_size_small"
+        android:layout_margin="@dimen/key_line_2"
+        android:background="@drawable/rounded_rect_4"
+        app:layout_constraintBottom_toBottomOf="@id/info_background_view"
+        app:layout_constraintStart_toStartOf="@id/info_background_view"
+        app:layout_constraintTop_toTopOf="@id/info_background_view"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_star_trek" />
+
+    <TextView
+        android:id="@+id/app_title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/key_line_2"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        app:layout_constraintBottom_toBottomOf="@id/info_background_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_image_view"
+        app:layout_constraintTop_toTopOf="@id/info_background_view"
+        tools:text="Sta Trek\nFleet Command" />
+
+    <TextView
+        android:id="@+id/promo_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/key_line_2"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/info_background_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/game_of_the_day" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
